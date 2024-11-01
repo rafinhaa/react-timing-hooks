@@ -1,0 +1,17 @@
+colors: true
+pre-commit:
+  parallel: true
+  commands:
+    typeCheck:
+      glob: "*.{ts,tsx}"
+      run: yarn type:check
+      stage_fixed: true
+    test:
+      run: yarn test --findRelatedTests {staged_files}
+      stage_fixed: true
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: yarn test
+      stage_fixed: true

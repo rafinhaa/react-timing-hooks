@@ -15,6 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "test:watch": "tsdx test --passWithNoTests --watch",
+    "type:check": "tsc --noEmit",
     "lint": "tsdx lint",
     "prepare": "tsdx build"
   },
@@ -30,6 +31,7 @@
     "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "lefthook": "^1.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tsdx": "^0.14.1",
